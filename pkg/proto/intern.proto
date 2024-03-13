@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "./pkg/proto";
+
+service Intern {
+	rpc GetInternInfo(GetInternInfoReq) returns (GetInternInfoResponse){}
+}
+
+message GetInternInfoReq {
+	string name = 1;
+}
+
+message GetInternInfoResponse {
+	string name = 1;
+	string domain = 2;
+	string hub = 3;
+}
