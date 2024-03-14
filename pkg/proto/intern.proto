@@ -4,8 +4,14 @@ package proto;
 
 option go_package = "./pkg/proto";
 
+import "google/api/annotations.proto";
+  
 service Intern {
-	rpc GetInternInfo(GetInternInfoReq) returns (GetInternInfoResponse){}
+	rpc GetInternInfo(GetInternInfoReq) returns (GetInternInfoResponse){
+		option (google.api.http) = {
+			get: "/intern"
+		};
+	}
 }
 
 message GetInternInfoReq {

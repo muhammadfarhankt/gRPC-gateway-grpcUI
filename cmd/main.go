@@ -9,5 +9,6 @@ import (
 func main() {
 	fmt.Println("Welcome to GRPC Server")
 	s := router.NewServer()
-	s.ServeGrpc()
+	go s.ServeGrpc()
+	s.ServeRestApi()
 }
