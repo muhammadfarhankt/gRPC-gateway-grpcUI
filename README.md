@@ -22,8 +22,10 @@ go install \
 ### Link to Documentation
 
 https://github.com/grpc-ecosystem/grpc-gateway?tab=readme-ov-file
+<br>
 gRPC Server & UI : https://www.youtube.com/watch?v=zxCCYYkmDQU/ 
-gRPC Gateway : https://www.youtube.com/watch?v=SawVP43DPpk
+<br>
+gRPC Gateway : https://www.youtube.com/watch?v=SawVP43DPpk/
 
 ### Generate proto files
 
